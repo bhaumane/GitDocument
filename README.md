@@ -48,10 +48,10 @@ git clone < github repository link >
 ```bash
 git status
 ```
-**untracked**: new files that git doesn’t yet track
-**modified**: changed
-**staged**: file is ready to be committed
-**unmodified**: unchanged
+- **untracked**: new files that git doesn’t yet track
+- **modified**: changed
+- **staged**: file is ready to be committed
+- **unmodified**: unchanged
 
 ---
 
