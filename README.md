@@ -2,16 +2,28 @@
 
 ## 📌 Introduction
 
-# Git
-Version control System is a tool that helps to track changes in code.
+**Git**
 Git is a Version Control System. It is: Popular, Free & Open Source, Fast & Scalable.
+Version control System is a tool that helps to track changes in code.
   
-# GitHub
+**GitHub**
 Website that allows developers to store and manage their code using Git
 https://github.com
 
+---
+
+## Setting up Git
+
+    - Visual Studio Code
+    - Windows (Git Bash)
+    - Mac (Terminal)
 
 ---
+
+**Command to check git installed or not**
+```bash
+git --version
+```
 
 ## 🧠 Git Architecture Overview
 
