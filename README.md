@@ -37,6 +37,148 @@ git config --list   # To view what is configured
 
 ---
 
+## Clone & Status
+
+**Clone**: cloning a repository on our local machine
+```bash
+git clone < github repository link >
+```
+
+**Status**: display the state of the code
+```bash
+git status
+```
+**untracked**: new files that git doesn’t yet track
+**modified**: changed
+**staged**: file is ready to be committed
+**unmodified**: unchanged
+
+---
+
+## Add & Commit:
+**add**: adds new or changed files in your working directory to the Git staging area.
+```bash
+	git add < file name >
+	git add .	#To add all the files
+```
+**commit**: it is the record of change
+```bash
+	git commit -m “commit message”
+```
+
+---
+
+## Push command:
+**push**: upload local repositories content to remote repositories
+```bash
+	git push origin main
+```
+
+---
+
+## Init command:
+**Init**: used to create a new git repository
+```bash
+git init
+git remote add origin < github repository link >
+git remote -v 		# to verify remote
+git branch 		# to check branch
+git branch -M main	# to rename branch
+git push origin main / git push -u origin main
+git remote remove origin # To remove origin
+```
+
+---
+
+
+## 🔄 File Lifecycle
+
+```
+Untracked → Modified → Staged → Committed
+```
+
+```bash
+git status
+git add <file>
+git add .
+git commit -m "message"
+```
+
+---
+
+## Git WorkFlow:
+```
+GitHub repo → Clone → Make changes → add in local repo → commit → push in GitHub repo
+```
+---
+
+## Branch Commands
+```bash
+git branch	                # to check branch
+git branch -M main          # to rename branch
+git checkout <branch name> 	# to navigate branch or to switch to another branch 
+git checkout -b <new branch name>	# to create new branch
+git branch -d <branch name>	        # to delete branch
+```
+---
+
+## Merging code:
+**Way 1**:
+```bash
+	Git diff <branch name>	# to compare commits, branches, files & more
+	Git merge <branch name>	# to merge 2 branches
+```
+**Way 2**:
+Create Pull Request:
+It lets you tell others about changes you’ve pushed to a branch in a repository on GitHub.
+
+---
+
+## Pull command:
+Used to fetch and download content from a remote repository and immediately update the local repository to match the content.
+
+```bash
+git pull origin main
+```
+---
+
+**Resolving Merge Conflicts**:
+An event that takes place when Git is unable to automatically resolve differences in code between two commits.
+
+---
+
+## Upstream branch:
+To push the current branch and set the remote as upstream, use
+```bash
+git push –set-upstream origin feature
+```
+
+---
+
+## Undoing Changes:
+**Case1**: staged changes
+```bash
+	git reset < file name >	# For single file
+	git reset			      # For multiple files
+```
+**Case2**: committed changes (for one commit)
+```bash
+	git reset HEAD~1
+```
+**Case3**: committed changes (for many commit)
+```bash
+	Git reset < commit hash >
+	Git reset --hard < commit hash >
+```
+
+---
+
+## Fork:
+A fork is a new repository that shares code and visibility settings with the original “upstream” repository.
+Fork is a rough copy.
+
+---
+
 
 
 ## 🧠 Git Architecture Overview
@@ -66,20 +208,7 @@ git remote -v
 
 ---
 
-## 🔄 File Lifecycle
 
-```
-Untracked → Modified → Staged → Committed
-```
-
-```bash
-git status
-git add <file>
-git add .
-git commit -m "message"
-```
-
----
 
 ## 🌿 Branching Strategy
 
@@ -267,8 +396,3 @@ git help <command>
 ```
 
 ---
-
-## 🚀 Conclusion
-
-Mastering Git improves productivity, collaboration, and code quality.  
-Use branching, commits, and workflows effectively for scalable development.
