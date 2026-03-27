@@ -125,8 +125,8 @@ git branch -d <branch name>	        # to delete branch
 ## Merging code:
 **Way 1**:
 ```bash
-	Git diff <branch name>	# to compare commits, branches, files & more
-	Git merge <branch name>	# to merge 2 branches
+	git diff <branch name>	# to compare commits, branches, files & more
+	git merge <branch name>	# to merge 2 branches
 ```
 **Way 2**:
 Create Pull Request:
