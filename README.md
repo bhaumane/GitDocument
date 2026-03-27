@@ -167,8 +167,8 @@ git push –set-upstream origin feature
 ```
 **Case3**: committed changes (for many commit)
 ```bash
-	Git reset < commit hash >
-	Git reset --hard < commit hash >
+	git reset < commit hash >
+	git reset --hard < commit hash >
 ```
 
 ---
