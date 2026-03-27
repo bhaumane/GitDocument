@@ -2,8 +2,14 @@
 
 ## 📌 Introduction
 
-Git is a distributed version control system that enables efficient collaboration, version tracking, and branching strategies.  
-GitHub is a platform for hosting Git repositories and managing collaboration workflows.
+# Git
+Version control System is a tool that helps to track changes in code.
+Git is a Version Control System. It is: Popular, Free & Open Source, Fast & Scalable.
+  
+# GitHub
+Website that allows developers to store and manage their code using Git
+https://github.com
+
 
 ---
 
