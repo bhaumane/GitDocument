@@ -2,11 +2,11 @@
 
 ## 📌 Introduction
 
-**Git**
+**Git**:
 Git is a Version Control System. It is: Popular, Free & Open Source, Fast & Scalable.
 Version control System is a tool that helps to track changes in code.
   
-**GitHub**
+**GitHub**:
 Website that allows developers to store and manage their code using Git
 https://github.com
 
@@ -25,6 +25,20 @@ https://github.com
 git --version
 ```
 
+## ⚙️ Configuring Git
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git config --list   # To view what is configured
+```
+
+**Credential.helper** : store user credentials (e.g user name, email etc)
+
+---
+
+
+
 ## 🧠 Git Architecture Overview
 
 ```
@@ -39,16 +53,7 @@ Working Directory → Staging Area → Local Repository → Remote Repository
 
 ---
 
-## ⚙️ Installation & Setup
 
-```bash
-git --version
-git config --global user.name "Your Name"
-git config --global user.email "your@email.com"
-git config --list
-```
-
----
 
 ## 📁 Repository Management
 
