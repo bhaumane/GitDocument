@@ -1,0 +1,251 @@
+# Git & GitHub – Advanced Guide for Developers
+
+## 📌 Introduction
+
+Git is a distributed version control system that enables efficient collaboration, version tracking, and branching strategies.  
+GitHub is a platform for hosting Git repositories and managing collaboration workflows.
+
+---
+
+## 🧠 Git Architecture Overview
+
+```
+Working Directory → Staging Area → Local Repository → Remote Repository
+```
+
+### Explanation:
+- **Working Directory**: Where files are edited
+- **Staging Area**: Where changes are prepared
+- **Local Repository**: Stores commits locally
+- **Remote Repository**: Hosted on GitHub
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git config --list
+```
+
+---
+
+## 📁 Repository Management
+
+```bash
+git init
+git clone <repo-url>
+git remote add origin <repo-url>
+git remote -v
+```
+
+---
+
+## 🔄 File Lifecycle
+
+```
+Untracked → Modified → Staged → Committed
+```
+
+```bash
+git status
+git add <file>
+git add .
+git commit -m "message"
+```
+
+---
+
+## 🌿 Branching Strategy
+
+### Create & Switch
+
+```bash
+git branch
+git checkout -b feature/login
+git checkout main
+```
+
+### Rename & Delete
+
+```bash
+git branch -M main
+git branch -d feature/login
+```
+
+---
+
+## 🔀 Merging vs Rebase
+
+### Merge
+
+```bash
+git merge feature/login
+```
+
+### Rebase
+
+```bash
+git rebase main
+```
+
+### Difference:
+
+| Merge | Rebase |
+|------|--------|
+| Keeps history | Rewrites history |
+| Safe for shared branches | Avoid on public branches |
+
+---
+
+## 🔗 Remote Operations
+
+```bash
+git push origin main
+git pull origin main
+git fetch origin
+```
+
+### Upstream
+
+```bash
+git push --set-upstream origin feature/login
+```
+
+---
+
+## 🔥 Advanced Commands
+
+### View Commit History
+
+```bash
+git log
+git log --oneline --graph --all
+```
+
+### Show Changes
+
+```bash
+git diff
+git diff HEAD~1
+```
+
+### Stashing
+
+```bash
+git stash
+git stash pop
+git stash list
+```
+
+---
+
+## ⏪ Undo Changes
+
+```bash
+git reset <file>
+git reset HEAD~1
+git reset --hard <commit>
+```
+
+### Revert (Safe Undo)
+
+```bash
+git revert <commit>
+```
+
+---
+
+## ⚔️ Merge Conflicts
+
+```
+<<<<<<< HEAD
+Your changes
+=======
+Incoming changes
+>>>>>>> branch
+```
+
+### Steps:
+1. Edit file
+2. Remove markers
+3. Add & commit
+
+---
+
+## 🔁 Git Workflow Diagram
+
+```
+         ┌──────────────┐
+         │   GitHub     │
+         └──────┬───────┘
+                │
+            git clone
+                │
+        ┌───────▼────────┐
+        │ Local Repo      │
+        └───────┬────────┘
+                │
+         git add / commit
+                │
+            git push
+                │
+         ┌──────▼───────┐
+         │   GitHub     │
+         └──────────────┘
+```
+
+---
+
+## 🔄 Pull Request Workflow
+
+1. Create branch
+2. Push branch
+3. Open Pull Request
+4. Code review
+5. Merge
+
+---
+
+## 🍴 Forking Workflow
+
+```
+Original Repo → Fork → Clone → Changes → PR to Original Repo
+```
+
+---
+
+## 🛠️ Best Practices
+
+- Use meaningful commit messages
+- Keep commits small
+- Use feature branches
+- Pull before push
+- Use `.gitignore`
+
+---
+
+## ⚠️ Common Mistakes
+
+- Using `--hard` reset carelessly
+- Rebasing public branches
+- Not resolving conflicts properly
+- Committing large/binary files
+
+---
+
+## 📚 Useful Tips
+
+```bash
+ls -a
+git help <command>
+```
+
+---
+
+## 🚀 Conclusion
+
+Mastering Git improves productivity, collaboration, and code quality.  
+Use branching, commits, and workflows effectively for scalable development.
